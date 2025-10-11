@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inter, system-ui, -apple-system, 'Segoe UI', Roboto, "Helvetica Neue", Arial;
+}
+.site-header {
+  background: #0770e9;
+  color: rgb(252, 251, 251);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo span{
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    color: #090f0f;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu a {
+  color: rgb(239, 241, 245);
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.banner  {
+  background-image: url("imagens/imagem-principal.jpg");
+    height: 400px;
+    width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.title-banner, .subtitle-banner {
+    display: flex;
+    text-align: right;
+    justify-content: end;
+    font-size: 2.5rem;
+     margin-bottom: 1rem;
+    color: rgb(252, 251, 252);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.circles {
+  display: flex;
+  gap: 36px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+    margin-top: 2rem;
+  background: linear-gradient(90deg, rgba(114, 164, 140, 1.000) 0.000%, rgba(120, 170, 158, 1.000) 16.667%, rgba(137, 195, 203, 1.000) 33.333%, rgba(164, 231, 255, 1.000) 50.000%, rgba(193, 255, 255, 1.000) 66.667%, rgba(220, 255, 255, 1.000) 83.333%, rgba(239, 255, 255, 1.000) 100.000%);
+    padding: 2rem 5rem;
+ 
+}
+
+.btn{
+    width: 220px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #3ec1e2c9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #fffdfd;
+}
+
+.circle-inner{
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: rgb(8, 8, 8);
+    
+}
+
+
+
+.site-footer {
+    background-color: #0855b9;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
