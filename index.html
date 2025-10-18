@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WP-Tech Solutions & Service</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagens/favicon_io/favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-   
-    <header class="site-header">
-      <div class="logo">WP-Tech  <span>Solutions</span></div>
-      <nav>
-        <ul class="menu">
-          <li><a href="index.html">Início</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
-<section class="banner">
-      <h1 class="title-banner"> WP-Tech Solutions</h1>
-      <p class="subtitle-banner">
-        Soluçoes em Tecnologia 
-      </p>
-      <a href="#contato" class="btn-banner">Entre em Contato</a>
-      </section>
-        <footer class="site-footer">
-          <p>&copy; 2025 - WP-Tech Solutions & Service . Todos os direitos reservados.</p>
-        </footer>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WP-Tech Solutions & Service</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="imagens/favicon_io/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="logo">WP-Tech <span>Solutions</span></div>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html" onclick="return verificarPaginaAtual('inicio')">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="banner">
+    <h1 class="title-banner">WP-Tech Solutions</h1>
+    <p class="subtitle-banner">Soluçoes em Tecnologia</p>
+
+    <button class="botao-modal">Soluçoes em Tecnologia clique !!</button>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 - WP-Tech Solutions & Service . Todos os direitos reservados.</p>
+  </footer>
+
+  <div class="modal">
+    <div class="conteudo-modal">
+      <span class="fechar-modal">X</span>
+      <iframe id="video" width="560" height="315" src="Video/video-modal.mp4" title="WP-Tech" frameborder="1"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

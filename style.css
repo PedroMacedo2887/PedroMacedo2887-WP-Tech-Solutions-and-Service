@@ -5,11 +5,12 @@
     font-family: inter, system-ui, -apple-system, 'Segoe UI', Roboto, "Helvetica Neue", Arial;
 }
 .site-header {
-  background: #e0e6eb;
+  background:#98e5eb ;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 2rem;
+  
 }
 
 .logo,  span{
@@ -33,60 +34,194 @@
   font-weight: bold;
 }
 .menu a:hover {
-  text-decoration: underline;
-  background: linear-gradient(90deg, #0fcae2, #03c212);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: width 0.4s ease;
+  color: #ff5733;
 }
 
 .banner  {
    
-  background-image: url("imagens/favicon_io/android-chrome-512x512.png");
+  background-image: url("imagens/img-1.jpg");
    width: 100%;
-   height: 600px;
+   height: 450px;
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
    color: rgb(6, 253, 253);
-   text-align: center;
+   text-align: left;
    padding: 5rem 1rem;
 }    
 
 .title-banner, .subtitle-banner {
     display: flex;
-    text-align: center;
-    justify-content: center;
+    text-align: left;
+    justify-content: flex-start;
     font-size: 2.5rem;
      margin-bottom: 1rem;
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
     
 }
 
-.btn-banner {
+.botao-modal {
     display: inline-block;
     padding: 0.75rem 1.5rem;
     background-color: #0862e9;
     color: #ffffff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: bold;
     margin-top: 1rem;
 }
 
-.btn-banner:hover {
+.botao-modal:hover {
    
   background: rgba(0, 0, 0, 0.6);
   transform: scale(1.03);
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
 
 }
+
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(52,52,50,0.749);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.conteudo-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 5px;
+    gap: 15px;
+}
+
+.fechar-modal {
+    background-color: #ffffff;
+    color: #f03817;
+    font-weight: bold;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+.modal iframe{
+    border-width: 0;
+    width: 640px;
+    height: 360px;
+}
+
+.modal.aberto {
+    opacity: 1;
+    visibility: visible;
+}
+
 .site-footer {
-    background-color: #e0e6eb;
+    background-color: #98e5eb;
     color: rgb(0, 16, 236);
     text-align: center;
     padding: 15px;
     
 }
   
+/* RESPONSIVIDADE PARA TABLET */
+@media screen and (max-width: 768px) {
+    .site-header {
+        padding: 0.5rem 1rem;
+        flex-wrap: wrap;
+    }
+
+    .logo, span {
+        width: 250px;
+        font-size: 1.2rem;
+    }
+
+    .menu {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .banner {
+        height: 350px;
+        padding: 3rem 1rem;
+    }
+
+    .title-banner, .subtitle-banner {
+        font-size: 2rem;
+    }
+
+    .modal iframe {
+        width: 90vw;
+        height: 50vw;
+        max-width: 560px;
+        max-height: 315px;
+    }
+}
+
+/* RESPONSIVIDADE PARA SMARTPHONE */
+@media screen and (max-width: 480px) {
+    .site-header {
+        padding: 0.5rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo, span {
+        width: 100%;
+        font-size: 1rem;
+        margin: 5px 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+
+    .menu a {
+        display: block;
+        padding: 0.5rem;
+    }
+
+    .banner {
+        height: 300px;
+        padding: 2rem 1rem;
+    }
+
+    .title-banner, .subtitle-banner {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .botao-modal {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .modal iframe {
+        width: 90vw;
+        height: 50vw;
+    }
+
+    .fechar-modal {
+        font-size: 18px;
+        width: 35px;
+    }
+
+    .site-footer {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}

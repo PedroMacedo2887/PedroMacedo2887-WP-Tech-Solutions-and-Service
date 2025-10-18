@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,15 +11,17 @@
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-image: url(imagens/img-principal.png);
+            background-size: cover;
+            background-position: center;
             min-height: 100vh;
         }
 
-        .hero-image {
+        .sobre-image {
             width: 100%;
             height: 500px;
             object-fit: cover;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
         .container {
@@ -32,16 +35,16 @@
             font-size: 3em;
             text-align: center;
             margin: 30px 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
             letter-spacing: 2px;
         }
 
-        .about-text {
-            background: rgba(255, 255, 255, 0.95);
+        .sobre-text {
+            background: rgba(0, 0, 0, 0.041);
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-            color: #333;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            color: #fffdfd;
             font-size: 1.1em;
             line-height: 1.8;
             text-align: justify;
@@ -49,8 +52,8 @@
             backdrop-filter: blur(10px);
         }
 
-        .about-text strong {
-            color: #667eea;
+        .sobre-text strong {
+            color: #0bcad8;
         }
 
         h2 {
@@ -58,36 +61,29 @@
             font-size: 2.5em;
             text-align: center;
             margin: 40px 0 30px 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
             letter-spacing: 1px;
         }
 
         .competencias-list {
-            background: rgba(255, 255, 255, 0.95);
             padding: 40px 50px;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
             list-style: none;
-            backdrop-filter: blur(10px);
         }
 
         .competencias-list li {
-            color: #333;
+            color: #fff7f7;
             font-size: 1.15em;
             padding: 15px 0;
-            border-bottom: 2px solid #e0e0e0;
+            border-bottom: 2px solid #e0e0e048;
             transition: all 0.3s;
             position: relative;
             padding-left: 30px;
         }
 
-        .competencias-list li:last-child {
-            border-bottom: none;
-        }
 
         .competencias-list li::before {
             content: "✓";
-            color: #667eea;
+            color: #74e25e;
             font-weight: bold;
             font-size: 1.3em;
             position: absolute;
@@ -96,43 +92,187 @@
 
         .competencias-list li:hover {
             padding-left: 35px;
-            color: #667eea;
+            color: #66d6ea;
         }
+
         .btn-back {
             display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            background-color: #667eea;
+            margin: 20px;
+            padding: 10px 15px;
+            background-color: #a802c9;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            transition: background-color 0.3s, transform 0.3s;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background-color: #099ca3;
         }
 
         .site-footer {
             text-align: center;
             padding: 15px;
             margin-top: 1rem;
+            color: #fff;
         }
-        
+
+        /* RESPONSIVIDADE PARA TABLET */
+@media screen and (max-width: 768px) {
+    .sobre-image {
+        height: 350px;
+    }
+
+    .container {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 2.2em;
+        margin: 20px 0;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin: 30px 0 20px 0;
+    }
+
+    .sobre-text {
+        padding: 25px;
+        font-size: 1em;
+        line-height: 1.7;
+        margin-bottom: 30px;
+    }
+
+    .competencias-list {
+        padding: 30px 30px;
+    }
+
+    .competencias-list li {
+        font-size: 1.05em;
+        padding: 12px 0;
+        padding-left: 28px;
+    }
+
+    .btn-back {
+        margin: 15px;
+        padding: 12px 18px;
+    }
+}
+
+/* RESPONSIVIDADE PARA SMARTPHONE */
+@media screen and (max-width: 480px) {
+    body {
+        background-attachment: scroll;
+    }
+
+    .sobre-image {
+        height: 250px;
+    }
+
+    .container {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        margin: 15px 0;
+        letter-spacing: 0.5px;
+        padding: 0 10px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+        margin: 25px 0 15px 0;
+        padding: 0 10px;
+    }
+
+    .sobre-text {
+        padding: 20px 15px;
+        font-size: 0.95em;
+        line-height: 1.6;
+        margin-bottom: 25px;
+        text-align: left;
+        border-radius: 10px;
+    }
+
+    .competencias-list {
+        padding: 20px 15px;
+    }
+
+    .competencias-list li {
+        font-size: 0.95em;
+        padding: 10px 0;
+        padding-left: 25px;
+    }
+
+    .competencias-list li::before {
+        font-size: 1.2em;
+    }
+
+    .competencias-list li:hover {
+        padding-left: 28px;
+    }
+
+    .btn-back {
+        display: block;
+        margin: 15px auto;
+        padding: 12px 20px;
+        text-align: center;
+        width: calc(100% - 40px);
+        max-width: 250px;
+    }
+
+    .site-footer {
+        padding: 12px;
+        font-size: 0.9em;
+    }
+}
+
+/* AJUSTES EXTRAS PARA TELAS MUITO PEQUENAS */
+@media screen and (max-width: 360px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .sobre-text {
+        font-size: 0.9em;
+        padding: 15px 10px;
+    }
+
+    .competencias-list li {
+        font-size: 0.9em;
+    }
+}
     </style>
 </head>
+
 <body>
-    <a class="btn-back" href="index.html">Voltar</a>
-    <img src="imagens/Sobre_02.png" alt="imagem-sobre" class="hero-image">
-    
+    <a class="btn-back" href="index.html">Inicio</a>
+    <img src="imagens/Sobre_02.png" alt="imagem-sobre" class="sobre-image">
+
     <div class="container">
-        
+
         <h1>Sobre</h1>
-        
-        <p class="about-text">
-            Bem-vindo à <strong>WP-Tech Solutions & Service!</strong> Somos uma empresa dedicada a fornecer soluções tecnológicas inovadoras para atender às necessidades do seu negócio. Nossa equipe de especialistas está comprometida em oferecer serviços de alta qualidade, desde desenvolvimento de software até consultoria em TI. Com foco na excelência e na satisfação do cliente, trabalhamos para transformar suas ideias em realidade, impulsionando o crescimento e a eficiência da sua empresa. Entre em contato conosco para descobrir como podemos ajudar você a alcançar seus objetivos tecnológicos!
+
+        <p class="sobre-text">
+            Bem-vindo à <strong>WP-Tech Solutions & Service!</strong> Somos uma empresa dedicada a fornecer soluções
+            tecnológicas inovadoras para atender às necessidades do seu negócio. Nossa equipe de especialistas está
+            comprometida em oferecer serviços de alta qualidade, desde desenvolvimento de software até consultoria em
+            TI. Com foco na excelência e na satisfação do cliente, trabalhamos para transformar suas ideias em
+            realidade, impulsionando o crescimento e a eficiência da sua empresa. Entre em contato conosco para
+            descobrir como podemos ajudar você a alcançar seus objetivos tecnológicos!
         </p>
-        
+
         <h2>Competências</h2>
-        
+
         <ul class="competencias-list">
+
             <li>Desenvolvimento de Software Personalizado</li>
             <li>Consultoria em Tecnologia da Informação</li>
             <li>Suporte Técnico e Manutenção de Sistemas</li>
@@ -141,9 +281,10 @@
             <li>Integração de Sistemas e Automação de Processos</li>
         </ul>
         <footer class="site-footer">
-          <p>&copy; 2025 - WP-Tech Solutions & Service . Todos os direitos reservados.</p>
-        
+            <p>&copy; 2025 - WP-Tech Solutions & Service . Todos os direitos reservados.</p>
+
     </div>
-    
+
 </body>
+
 </html>

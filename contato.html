@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon_io/favicon.ico" type="image/x-icon">
+    <title>Contato - WP-Tech</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: inter, system-ui, -apple-system, 'Segoe UI', Roboto, "Helvetica Neue", Arial;
+        }
+
+        body {
+            background-image: url(imagens/img-principal.png);
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px 15px;
+            background-color: #a802c9;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background-color: #099ca3;
+        }
+
+        .title-contato {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2.5em;
+            color: #08e3eb;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .subtitle-contato {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.2em;
+            color: aqua;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-contato {
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+            padding: 20px;
+            background-color: #f9f9f904;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(12, 12, 12, 0.014);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #a802c9;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #a802c9;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #099ca3;
+        }
+
+        .rede-contato {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .rede-contato a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .rede-contato img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .rede-contato img:hover {
+            transform: scale(1.1);
+        }
+
+        .site-footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 1rem;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <a class="btn-back" href="index.html">Início</a>
+    <h1 class="title-contato">Entre em Contato</h1>
+    <p class="subtitle-contato">A WP-Tech está sua disposição</p>
+    <section>
+        <div class="form-contato">
+            <form action="https://formsubmit.co/seu-email@example.com" method="POST">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required placeholder="Seu nome completo">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Assunto</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Sobre o que você quer falar?">
+                </div>
+
+                <div class="form-group">
+                    <label for="messagem">Mensagem</label>
+                    <textarea id="messagem" name="message" required
+                        placeholder="Escreva sua mensagem aqui..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Mensagem</button>
+            </form>
+    </section>
+    <section>
+        <div class="rede-contato">
+            <a href="https://www.facebook.com">
+                <img src="imagens/Icons8 (1)/icons8-facebook-100.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="imagens/Icons8 (1)/icons8-instagram-100.png" alt="Instagram">
+            </a>
+            <a href="https://www.github.com">
+                <img src="imagens/Icons8 (1)/icons8-github-100.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com">
+                <img src="imagens/Icons8 (1)/icons8-linkedin-circundado-100.png" alt="LinkedIn">
+            </a>
+
+        </div>
+    </section>
+
+    <div>
+        <footer class="site-footer">
+            <p>&copy; 2025 - WP-Tech Solutions & Service . Todos os direitos reservados.</p>
+    </div>
+</body>
+
+</html>
