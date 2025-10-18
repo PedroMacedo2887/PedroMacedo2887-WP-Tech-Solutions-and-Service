@@ -121,43 +121,8 @@ WP-Tech-Solutions-and-Service/
 - Editor de código (recomendado: VS Code)
 - Git instalado na máquina
 
-### Passos para execução local
 
-**1. Clone o repositório**
 
-```bash
-git clone https://github.com/PedroMacedo2887/PedroMacedo2887-WP-Tech-Solutions-and-Service.git
-```
-
-**2. Navegue até o diretório do projeto**
-
-```bash
-cd PedroMacedo2887-WP-Tech-Solutions-and-Service
-```
-
-**3. Abra o arquivo index.html no navegador**
-
-**Opção 1: Abrir diretamente**
-
-```bash
-# No Windows
-start index.html
-
-# No macOS
-open index.html
-
-# No Linux
-xdg-open index.html
-```
-
-**Opção 2: Usar Live Server (Recomendado)**
-
-1. Instale a extensão **Live Server** no VS Code
-2. Clique com botão direito em `index.html`
-3. Selecione "Open with Live Server"
-4. O site abrirá automaticamente em `http://localhost:5500`
-
----
 
 ## 🗺️ Roadmap
 
@@ -190,12 +155,6 @@ xdg-open index.html
 ## 🤝 Contribuindo
 
 Contribuições são sempre bem-vindas! Se você tem alguma sugestão para melhorar este projeto:
-
-1. Faça um **Fork** do projeto
-2. Crie uma **Branch** para sua Feature (`git checkout -b feature/NovaFuncionalidade`)
-3. **Commit** suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
-4. Faça **Push** para a Branch (`git push origin feature/NovaFuncionalidade`)
-5. Abra um **Pull Request**
 
 ### Diretrizes de Contribuição
 
@@ -234,3 +193,7 @@ Se este projeto foi útil para você, considere dar uma ⭐ no repositório!
   <br>
   <sub>WP-Tech Solutions & Services © 2024</sub>
 </div>
+
+https://github.com/user-attachments/assets/4827605b-860d-407a-93bf-2923b224448a
+
+
