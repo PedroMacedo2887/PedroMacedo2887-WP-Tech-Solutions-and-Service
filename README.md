@@ -1,33 +1,82 @@
-# 🚀WP-Tech Solutions & Services — Site de Soluções e Serviços de Tecnologia
+# 🚀 WP-Tech Solutions & Services
 
-> *Status do projeto:* 🚧 Em construção  
+**Status do projeto:** 🚧 Em construção
 
-Bem-vindo ao repositório do *WP-Tech Solutions & Service, um site institucional moderno e responsivo que apresenta soluções e serviços personalizados na área de **tecnologia da informação*.  
-Nosso objetivo é conectar empresas e pessoas a tecnologias inovadoras, oferecendo desde consultoria até desenvolvimento de sistemas sob medida.
+Bem-vindo ao repositório do **WP-Tech Solutions & Services**, um site institucional moderno e responsivo que apresenta soluções e serviços personalizados na área de **tecnologia da informação**. Nosso objetivo é conectar empresas e pessoas a tecnologias inovadoras, oferecendo desde consultoria até desenvolvimento de sistemas sob medida.
 
-O WP-Tech Solutions & Services é uma plataforma web desenvolvida para apresentar serviços de tecnologia de forma profissional e acessível. O site oferece:
+---
 
-💼 Apresentação de serviços e soluções tecnológicas
-🌐 Design responsivo e moderno
-📱 Experiência otimizada para dispositivos móveis
-⚡ Performance e carregamento rápido
-🎨 Interface intuitiva e amigável
+## 📋 Índice
 
-✨ Funcionalidades
+- [Sobre o Projeto](#-sobre-o-projeto)
+- [Funcionalidades](#-funcionalidades)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Instalação e Uso](#-instalação-e-uso)
+- [Roadmap](#-roadmap)
+- [Contribuindo](#-contribuindo)
+- [Licença](#-licença)
+- [Contato](#-contato)
 
- Landing page institucional
- Seção de serviços oferecidos
- Formulário de contato
- Design responsivo
+---
 
+## 🎯 Sobre o Projeto
 
-🛠️ Tecnologias Utilizadas
-Front-end
+O **WP-Tech Solutions & Services** é uma plataforma web desenvolvida para apresentar serviços de tecnologia de forma profissional e acessível. O site oferece:
 
-HTML5
-CSS3
-JavaScript (ES6+)
+- 💼 Apresentação de serviços e soluções tecnológicas
+- 🌐 Design responsivo e moderno
+- 📱 Experiência otimizada para dispositivos móveis
+- ⚡ Performance e carregamento rápido
+- 🎨 Interface intuitiva e amigável
 
+---
+
+## ✨ Funcionalidades
+
+### Páginas
+
+- ✅ **index.html** - Landing page com visão geral dos serviços
+- ✅ **sobre.html** - História, missão e valores da empresa
+- ✅ **contato.html** - Formulário de contato e informações
+
+### Recursos
+
+- ✅ Design responsivo para todos os dispositivos
+- ✅ Navegação intuitiva entre páginas
+- ✅ Galeria de imagens e recursos visuais
+- ✅ Vídeos institucionais integrados
+- ⏳ Formulário de contato funcional (backend)
+- ⏳ Animações e transições suaves
+- ⏳ Otimização SEO
+- ⏳ Integração com redes sociais
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+### Front-end
+
+- **HTML5** - Estrutura semântica
+- **CSS3** - Estilização e design responsivo
+- **JavaScript** - Interatividade e funcionalidades dinâmicas
+
+### Recursos Multimídia
+
+- Vídeos institucionais
+- Galeria de imagens otimizada
+
+### Ferramentas de Desenvolvimento
+
+- Git & GitHub
+- Visual Studio Code
+- Navegadores modernos (Chrome, Firefox, Safari, Edge)
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
 WP-Tech-Solutions-and-Service/
 │
 ├── Video/                    # Vídeos institucionais e demonstrativos
@@ -48,25 +97,140 @@ WP-Tech-Solutions-and-Service/
 │
 ├── README.md                # Documentação do projeto
 └── LICENSE                  # Licença do projeto
+```
 
+### 📂 Descrição dos Arquivos
 
-Ferramentas
+| Arquivo | Descrição |
+|---------|-----------|
+| `index.html` | Página inicial com apresentação dos serviços |
+| `sobre.html` | Informações sobre a empresa e equipe |
+| `contato.html` | Formulário de contato e informações |
+| `style.css` | Estilos e design responsivo |
+| `script.js` | Funcionalidades interativas e animações |
+| `Video/` | Pasta com vídeos promocionais e demonstrativos |
+| `imagens/` | Recursos visuais (logos, ícones, banners) |
 
-Git & GitHub
-VS Code
+---
 
-🚀 Instalação e Uso
-Pré-requisitos
+## 🚀 Instalação e Uso
 
-Navegador web moderno
-Editor de código (recomendado: VS Code)
-Git instalado
+### Pré-requisitos
 
+- Navegador web moderno (Chrome, Firefox, Safari, Edge)
+- Editor de código (recomendado: VS Code)
+- Git instalado na máquina
 
-🌟 Apoie o Projeto
+### Passos para execução local
+
+**1. Clone o repositório**
+
+```bash
+git clone https://github.com/PedroMacedo2887/PedroMacedo2887-WP-Tech-Solutions-and-Service.git
+```
+
+**2. Navegue até o diretório do projeto**
+
+```bash
+cd PedroMacedo2887-WP-Tech-Solutions-and-Service
+```
+
+**3. Abra o arquivo index.html no navegador**
+
+**Opção 1: Abrir diretamente**
+
+```bash
+# No Windows
+start index.html
+
+# No macOS
+open index.html
+
+# No Linux
+xdg-open index.html
+```
+
+**Opção 2: Usar Live Server (Recomendado)**
+
+1. Instale a extensão **Live Server** no VS Code
+2. Clique com botão direito em `index.html`
+3. Selecione "Open with Live Server"
+4. O site abrirá automaticamente em `http://localhost:5500`
+
+---
+
+## 🗺️ Roadmap
+
+### Fase 1 - Fundação ✅
+
+- ✅ Estrutura HTML das páginas principais
+- ✅ Estilização CSS básica
+- ✅ Layout responsivo
+- ✅ Integração de vídeos e imagens
+
+### Fase 2 - Funcionalidades 🚧
+
+- ⏳ Implementar animações CSS/JS
+- ⏳ Adicionar formulário funcional com validação
+- ⏳ Integrar backend para envio de emails
+- ⏳ Otimizar SEO e performance
+- ⏳ Adicionar menu hamburguer mobile
+
+### Fase 3 - Expansão 📅
+
+- 📅 Sistema de blog de tecnologia
+- 📅 Página de serviços detalhados
+- 📅 Portfólio de projetos realizados
+- 📅 Área de depoimentos de clientes
+- 📅 Integração com redes sociais
+- 📅 Sistema de agendamento online
+
+---
+
+## 🤝 Contribuindo
+
+Contribuições são sempre bem-vindas! Se você tem alguma sugestão para melhorar este projeto:
+
+1. Faça um **Fork** do projeto
+2. Crie uma **Branch** para sua Feature (`git checkout -b feature/NovaFuncionalidade`)
+3. **Commit** suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
+4. Faça **Push** para a Branch (`git push origin feature/NovaFuncionalidade`)
+5. Abra um **Pull Request**
+
+### Diretrizes de Contribuição
+
+- Mantenha o código limpo e bem comentado
+- Siga os padrões de nomenclatura existentes
+- Teste suas alterações em diferentes navegadores
+- Atualize a documentação quando necessário
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença especificada no arquivo [LICENSE](LICENSE).
+
+---
+
+## 📧 Contato
+
+**WP-Tech Solutions & Services**
+
+- 🌐 **Website:** [em construção]
+- 📧 **Email:** contato@wptech.com.br
+- 💼 **LinkedIn:** [Seu LinkedIn]
+- 🐙 **GitHub:** [@PedroMacedo2887](https://github.com/PedroMacedo2887)
+
+---
+
+## 🌟 Apoie o Projeto
+
 Se este projeto foi útil para você, considere dar uma ⭐ no repositório!
 
+---
+
 <div align="center">
-  Desenvolvido com 💙 por <a href="https://github.com/PedroMacedo2887">Pedro Macedo</a>
+  <strong>Desenvolvido com 💙 por <a href="https://github.com/PedroMacedo2887">Pedro Macedo</a></strong>
+  <br>
+  <sub>WP-Tech Solutions & Services © 2024</sub>
 </div>
- 
